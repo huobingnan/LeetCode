@@ -8,9 +8,9 @@ public class LeetCode394Test {
 
     @Test
     public void testCase1() {
-        Assertions.assertEquals("aaabcbc", instance.decodeString("3[a]2[bc]"));
-        Assertions.assertEquals("accaccacc", instance.decodeString("3[a2[c]]"));
-        Assertions.assertEquals("abcabccdcdcdef", instance.decodeString("2[abc]3[cd]ef"));
-        Assertions.assertEquals("abccdcdcdxyz", instance.decodeString("abc3[cd]xyz"));
+        Assertions.assertEquals("aaabcbc", instance.decodeString("3[a]2[bc]"), "测试案例1");
+        Assertions.assertEquals("accaccacc", instance.decodeString("3[a2[c]]"), "测试案例2");
+        Assertions.assertEquals("abcabccdcdcdef", instance.decodeString("2[abc]3[cd]ef"), "测试案例3");
+        Assertions.assertEquals("abccdcdcdxyz", instance.decodeString("abc3[cd]xyz"), "测试案例4");
     }
 }
