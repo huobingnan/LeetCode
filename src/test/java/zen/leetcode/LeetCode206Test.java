@@ -18,7 +18,7 @@ public class LeetCode206Test {
 
         Assertions.assertEquals(
                 ListNode.of(2, 1),
-                ListNode.of(1, 2),
+                instance.reverseList(ListNode.of(1, 2)),
                 "Case 2"
         );
 
