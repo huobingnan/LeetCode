@@ -37,6 +37,21 @@ public class ListNode {
     }
 
     @Override
+    public boolean equals(Object obj) {
+        if (obj == null) return false;
+        if (! (obj instanceof ListNode)) return false;
+        ListNode other = (ListNode) obj;
+        ListNode ptr = this;
+        for (;;) {
+            if (other == null || ptr == null) break;
+            if (ptr.val != other.val) return false;
+            ptr = ptr.next;
+            other = other.next;
+        }
+        return other == ptr;
+    }
+
+    @Override
     public String toString() {
         final StringJoiner sj = new StringJoiner(", ", "[", "]");
         ListNode ptr = this;
